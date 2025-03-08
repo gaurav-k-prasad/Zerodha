@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3002 | process.env.PORT;
+const port = 3002 || process.env.PORT;
 
 const uri = process.env.MONGO_URL;
 const holdingModel = require("./models/holdingModel");
