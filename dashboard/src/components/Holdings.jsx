@@ -5,7 +5,7 @@ const Holdings = () => {
 	const [holdings, setHoldings] = useState([]);
 	useEffect(() => {
 		(async () => {
-			const data = await axios.get("http://localhost:3002/holdings");
+			const data = await axios.get("https://zerodha-7iky.onrender.com/holdings");
 			setHoldings(data.data);
 		})();
 	}, []);

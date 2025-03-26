@@ -6,7 +6,7 @@ const Orders = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const res = await fetch("http://localhost:3002/orders");
+			const res = await fetch("https://zerodha-7iky.onrender.com/orders");
 			const data = await res.json();
 			setOrders(data);
 		};

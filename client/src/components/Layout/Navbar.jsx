@@ -11,8 +11,8 @@ const Navbar = () => {
 					<img src={logo} alt="Zerodha" width={130} height={80} />
 				</Link>
 				<div className="flex items-center gap-10">
-					<Link to="http://localhost:5174"><Button text="Dashboard"/></Link>
-					
+					<Link to="https://zerodha-dashboard-rho.vercel.app/"><Button text="Dashboard"/></Link>
+
 					<div className="flex items-center gap-10 max-md:hidden text-sm text-slate-600">
 						{navLinks.map((link) => (
 							<Link key={link.name} to={link.href} className="hover:text-blue">
