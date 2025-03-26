@@ -75,7 +75,7 @@ const Funds = () => {
 
 				<div className="col">
 					<div className="commodity">
-						<p>{"You don't have a commodity account"}</p>
+						<p>You don&apos;t have a commodity account</p>
 						<Link className="btn btn-blue">Open Account</Link>
 					</div>
 				</div>
@@ -85,4 +85,3 @@ const Funds = () => {
 };
 
 export default Funds;
-

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { hamburger, logo } from "../../assets/Images";
 import { navLinks } from "../../constants";
+import Button from "../General/Button";
 
 const Navbar = () => {
 	return (
@@ -10,6 +11,8 @@ const Navbar = () => {
 					<img src={logo} alt="Zerodha" width={130} height={80} />
 				</Link>
 				<div className="flex items-center gap-10">
+					<Link to="http://localhost:5174"><Button text="Dashboard"/></Link>
+					
 					<div className="flex items-center gap-10 max-md:hidden text-sm text-slate-600">
 						{navLinks.map((link) => (
 							<Link key={link.name} to={link.href} className="hover:text-blue">
