@@ -25,7 +25,11 @@ app.get("/add-positions", async (req, res) => {
 })
 */
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://zerodha-dashboard-rho.vercel.app', // Adjust this based on your frontend URL
+    methods: 'GET, POST, PUT, DELETE, OPTIONS',
+    allowedHeaders: 'Content-Type, Authorization'
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
